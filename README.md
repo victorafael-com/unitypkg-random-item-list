@@ -19,6 +19,8 @@ The random list can be used with any serializable value, but the custom editor w
 
 To be able to create Random Lists to your custom scriptable class, let's say **Enemy** you must create two files:
 
+**RandomEnemyList.cs**
+
 ```cpp, RandomEnemyList.cs
 using com.victorafael.randomList;
 using UnityEngine;
@@ -26,6 +28,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Random Enemy List")]
 public class RandomEnemyList : RandomListData<Enemy> { }
 ```
+
+**Editor/RandomEnemyListEditor.cs**
 
 ```cpp, Editor/RandomEnemyListEditor.cs
 using UnityEditor;
